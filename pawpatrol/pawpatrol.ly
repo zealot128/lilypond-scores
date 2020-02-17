@@ -12,7 +12,7 @@
 \score{
   <<
     %\new FretBoards {
-      %\harmonies
+    %\harmonies
     %}
     \new ChordNames {
       \semiGermanChords
@@ -23,22 +23,27 @@
     }
     \new Lyrics \lyricsto "RH" \textI
     \new Lyrics \lyricsto "RH" \text
+    \new Lyrics \lyricsto "RH" \textEng
   >>
-	\layout{
+  \layout{
     \context {
       \Voice
       \override VerticalAxisGroup.default-staff-staff-spacing.basic-distance = #30
       \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/4)
     }
+      \context {
+      \Score
+      \override SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/16)
+    }
   }
-	\midi{
-	  \tempo 4 = 160
-	}
+  \midi{
+    \tempo 4 = 160
+  }
 }
 \paper {
   system-system-spacing =
   #'((basic-distance . 20)
-  (minimum-distance . 8)
-  (padding . 1)
-  (stretchability . 60))
+     (minimum-distance . 8)
+     (padding . 1)
+     (stretchability . 60))
 }
