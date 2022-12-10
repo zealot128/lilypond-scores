@@ -1,3 +1,4 @@
+\language "deutsch"
 % LilyBin
 \header {
   title = \markup { "Paw Patrol" }
@@ -37,7 +38,7 @@
     }
   }
   \midi{
-    \tempo 4 = 160
+    \tempo 4 = 220
   }
 }
 \paper {

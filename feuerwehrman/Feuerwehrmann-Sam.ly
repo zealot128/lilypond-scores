@@ -114,9 +114,7 @@ verseB = \lyricmode {
    \unfoldRepeats <<
     \new ChordNames \chordNames
     \new Staff { \melody }
-   
   >>
-  
   \midi {
     \tempo 4=140
   }
@@ -128,9 +126,7 @@ verseB = \lyricmode {
     \addlyrics { \verse }
     \addlyrics { \verseB }
   >>
-  
-  \layout { }
- 
+  \layout {}
 }
 
 

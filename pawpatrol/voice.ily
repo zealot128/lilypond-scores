@@ -14,7 +14,7 @@ harmonies = \chordmode {
 
 rh = \relative c' {
 	\accidentalStyle Score.piano
-	\tempo "Energetic" 4 = 160
+	\tempo "Energetic" 4 = 220
 
   % Paw Patrol
   e4 d8 c2 r8
